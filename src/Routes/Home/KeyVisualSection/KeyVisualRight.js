@@ -56,6 +56,10 @@ class KeyVisualRight extends React.Component {
             let circle2ColorTrans = 1;
             let circle3Color = 230;
             let circle3ColorTrans = 1;
+
+            
+            
+            
             setInterval(()=>{
                 ctx.clearRect(0,0,width,height);
                 ctx.drawImage(img,width / 2 - img.width / 2,0);
@@ -77,13 +81,13 @@ class KeyVisualRight extends React.Component {
                 if(width <= x3+100 || x3-100<= 0) {
                     x3speed*=-1;
                 }
-                if(cRad1 >= 60 || cRad1<40){
+                if(cRad1 >= 70 || cRad1<30){
                     cRad1Speed*=-1;
                 }
-                if(cRad2 >= 110 || cRad2<90){
+                if(cRad2 >= 120 || cRad2<80){
                     cRad2Speed*=-1;
                 }
-                if(cRad3 >= 110 || cRad3<90){
+                if(cRad3 >= 120 || cRad3<80){
                     cRad3Speed*=-1;
                 }
 
@@ -97,8 +101,9 @@ class KeyVisualRight extends React.Component {
                     circle3ColorTrans*=-1;
                 }
                 ctx.beginPath();
+                
                 ctx.strokeStyle = ctx.fillStyle = `rgb(42, 67, ${circle1Color})`;
-                ctx.globalAlpha = "0.9";
+                ctx.globalAlpha = "0.7";
                 ctx.arc(x1, y1, cRad1, 0, Math.PI * 2);
                 ctx.fill();
                 ctx.stroke();

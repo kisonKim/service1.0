@@ -11,8 +11,11 @@ const Header = styled.header`
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    z-index: 3;
+    padding: 0 60px;
     background-color: white;
+    border-bottom:1px solid white;
+    box-shadow:1px 1px 4px 1px white;
 `;
 const Item = styled.li`
     
@@ -26,18 +29,11 @@ const Item = styled.li`
         width:150px;
         margin-right:100px;
     }
-
     `;
 
 const List = styled.ul`
     display:flex;    
     height:50px;
-`;
-const SLink = styled(Link)`
-    height:50px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 `;
 
 const LogoImg = styled.img`
@@ -45,9 +41,31 @@ const LogoImg = styled.img`
     vertical-align:middle;
 `;
 
+const SLink = styled(Link)`
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+`;
+
 const MoreSpan = styled.span`
     cursor: pointer;
 `;
+const UserItem = styled.div`
+    position:absolute;
+    right: 120px;
+    line-height:50px;
+`;
+
+const Login = styled(Link)`
+    margin-right:40px;
+`;
+const Join = styled(Link)`
+    border:1px solid rgb(30,45,58);
+    border-radius:5px;
+    padding: 2px 3px;
+`;
+
 export default withRouter( ({location: { pathname } }) => (
     <Header>
         <List>
@@ -72,6 +90,10 @@ export default withRouter( ({location: { pathname } }) => (
                 더보기
                 </MoreSpan>
             </Item>
+            <UserItem>
+                <Login to="/">로그인</Login>
+                <Join to="/">회원가입</Join>
+            </UserItem>
         </List>
     </Header>
 ));

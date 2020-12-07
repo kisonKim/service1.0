@@ -9,7 +9,7 @@ const LeftBody = styled.div`
     font-size: 3.5rem;
     vertical-align:middle;
     margin-top: 6%;
-    margin-left: 5%;
+    
 `;
 
 const Slogan = styled.span`
@@ -32,7 +32,7 @@ const Typed = styled.div`
 const Recommend = styled.div`
     display:table;
     vertical-align:middle;
-    margin-top: 50px;
+    margin-top: 60px;
 `;
 
 const RecommendCell = styled.div`

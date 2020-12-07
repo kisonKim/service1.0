@@ -1,0 +1,8 @@
+.swiper-container .swiper-wrapper .swiper-slide {
+    width:100% !important;
+    display: inline;
+}
+
+.swiper-container .swiper-wrapper {
+    overflow: hidden;
+}
