@@ -4,6 +4,7 @@ import TypedWord from "react-typed";
 import recommendCircle from "Resources/main/keyvisual/recommendCircle.svg";
 import vipCircle from "Resources/main/keyvisual/vipCircle.svg";
 
+
 const LeftBody = styled.div`
     flex:1.4;
     font-size: 3.5rem;

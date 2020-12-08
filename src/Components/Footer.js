@@ -43,7 +43,7 @@ const MiddleItem = styled.span`
 const FooterItems = styled.div`
     display:flex;
     width:100%;
-    padding:5% 3% 0 3%;
+    padding:3% 3% 0 3%;
     ul:first-child{
         text-align:center;    
     }

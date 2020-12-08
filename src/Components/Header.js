@@ -12,7 +12,7 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     z-index: 3;
-    padding: 0 60px;
+    padding: 0 120px;
     background-color: white;
     border-bottom:1px solid white;
     box-shadow:1px 1px 4px 1px white;
@@ -63,7 +63,13 @@ const Login = styled(Link)`
 const Join = styled(Link)`
     border:1px solid rgb(30,45,58);
     border-radius:5px;
-    padding: 2px 3px;
+    padding: 5px 15px;
+    transition: 0.2s ease-in-out;
+    :hover {
+        background-color:#f85e65;
+        color:white;
+        border-color:transparent;
+    }
 `;
 
 export default withRouter( ({location: { pathname } }) => (

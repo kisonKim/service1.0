@@ -22,15 +22,27 @@ const SubTitle = styled.span`
     font-size: 1.3rem;
     line-height: 3;
     color: #f85e65;
+    z-index:2;
 `;
 
+const TitleWrapper = styled.div`
+    position:relative;
+`;
 const Title = styled.span`
+    position:absolute;
+    left: 0;
+    bottom:0;
     display:block;
     font-size:3rem;
     font-weight:bold;
     &::before {
         background-image: url(${portfolioCircle}) no-repeat;
     }
+`;
+const PortfolioCircle = styled.img`
+    position:absolute;
+    left:-50px;
+    bottom:-50px;
 `;
 
 const PortVideo = styled.video`
@@ -51,7 +63,6 @@ const Frame = styled.div`
 const swiperParams = {
     effect:"fade",
     autoplay:true,
-    slideShadows: true,
     loop:true,
     slidesPerView: "1",
 }
@@ -68,11 +79,17 @@ class KeyVisualLeft extends React.Component {
         let reactSwipeEl;
         return (
             <LeftBody>
-                    <Title>포트폴리오</Title>
+                    <TitleWrapper>
+                        <PortfolioCircle src={portfolioCircle}/>
+                        <Title>포트폴리오</Title>
+                    </TitleWrapper>
                     <SubTitle>국내 1위 사진작가 중개 플랫폼</SubTitle>
                     <PortVideo id="portVideo" src={portfolioVideo} type="video/mp4" muted autoplay loop></PortVideo>
                     <Frame>
+                        <TitleWrapper>
+                        <PortfolioCircle src={portfolioCircle}/>
                         <Title>이벤트</Title>
+                        </TitleWrapper>
                         <SubTitle>국내 1위 사진작가 중개 플랫폼</SubTitle>
                         <Swiper {...swiperParams}> 
                             <SwiperSlide><EventImg src={eventImg_1} /></SwiperSlide> 

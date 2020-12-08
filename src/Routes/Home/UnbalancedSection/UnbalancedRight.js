@@ -27,7 +27,6 @@ const SubTitle = styled.span`
 const swiperParams = {
     effect:"fade",
     autoplay:{delay:3000},
-    slideShadows: true,
     loop:true,
     slidesPerView: "1",
 }
