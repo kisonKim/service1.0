@@ -8,14 +8,14 @@ const Header = styled.header`
     position:fixed;
     top:0;
     left:0;
-    width:1200px;
-    min-width:1200px;
+    width:1280px;
+    min-width:1280px;
     margin: 0 325px;
     height: 70px;
     font-size: 18px;
     align-items: center;
     z-index: 3;
-    color:#1E2D3A;
+    color:black;
     background-color: white;
     border-bottom:1px solid white;
     box-shadow:1px 1px 4px 1px white;

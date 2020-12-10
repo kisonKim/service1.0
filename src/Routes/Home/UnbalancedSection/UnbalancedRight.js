@@ -14,7 +14,7 @@ SwiperCore.use([EffectFade,Autoplay]);
 const RightBody = styled.div`
     flex:1;
     width:100%;
-    padding-left:26px;
+    padding-left:12.5px;
     margin-top:30%;
 `;
 
@@ -30,10 +30,10 @@ const TitleWrapper = styled.div`
 
 const MagazineCircle = styled.div`
     position:absolute;
-    left: 102px;
-    bottom: -35px;
-    width: 65px;
-    height: 65px;
+    left: 72px;
+    bottom: -29px;
+    width: 64px;
+    height: 64px;
     border-radius:100%;
     background-color: #ECADA6;
 `;
@@ -49,16 +49,16 @@ const Title = styled.span`
     position:absolute;
     left: 0;
     display:block;
-    font-size:3rem;
+    font-size:40px;
     font-weight:bold;
 `;
 
 const SubTitle = styled.span`
     position:absolute;
-    bottom: -110px;
+    bottom: -75px;
     width:300px;
-    font-size: 1.3rem;
-    line-height: 3;
+    color: #2A435B;
+    font-size: 22px;
 `;
 
 const MagazineImg = styled.img`

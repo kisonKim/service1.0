@@ -13,17 +13,17 @@ import SwiperCore, {EffectFade, Autoplay} from 'swiper';
 SwiperCore.use([EffectFade,Autoplay]);
 
 const LeftBody = styled.div`
-    flex:1.4145;
+    flex:1.3951;
     width:100%;
-    padding-right:26px;
+    padding-right:12.5px;
 `;
 
 const SubTitle = styled.span`
     position:absolute;
-    bottom: -110px;
+    bottom: -75px;
     width:300px;
-    font-size: 1.3rem;
-    line-height: 3;
+    font-size: 22px;
+    color: #2A435B;
 `;
 
 const TitleSection = styled.div`
@@ -39,31 +39,33 @@ const Title = styled.span`
     position:absolute;
     left: 0;
     display:block;
-    font-size:3rem;
+    font-size:40px;
     font-weight:bold;
 `;
 const PortfolioCircle = styled.div`
     position:absolute;
-    left: -68px;
-    bottom: -159px;
-    width: 150px;
-    height: 150px;
+    left: -80px;
+    bottom: -142px;
+    width: 127px;
+    height: 127px;
     border-radius:100%;
     background-color: rgb(245,236,230);
 `;
 
 const EventCircle = styled.div`
     position:absolute;
-    left: -24px;
-    bottom: -38px;
-    width: 60px;
-    height: 60px;
+    left: -25px;
+    bottom: -29px;
+    width: 49px;
+    height: 49px;
     border-radius:100%;
     background-color: rgb(245,236,230);
 `;
 
 const PortVideo = styled.video`
+    position:relative;
     width:100%;
+    z-index:2;
     /* box-shadow:10px 10px 12px 1px #aaa; */
 `;
 

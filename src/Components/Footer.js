@@ -6,7 +6,7 @@ import instagram from "Resources/footer/instagram.svg";
 const Footer = styled.footer`
     background-color: rgb(30,45,58);
     color: white;
-    height: 350px;
+    height: 370px;
     position:relative;
     width: 100%;
 `;
@@ -22,7 +22,7 @@ const FooterBottom = styled.div`
 `;
 
 const FooterMiddle = styled.div`
-    padding:10px 0;
+    padding:17px 0;
     width:100%;
     color:#1E2D3A;
     text-align:center;
@@ -34,18 +34,30 @@ const FooterMiddle = styled.div`
 
 const MiddleItem = styled.span`
     padding: 0 50px;
+    font-size:22px;
+    font-weight:bold;
     :not(:last-child){
-        border-right : 1px solid black;
+        border-right : 2px solid black;
     }
-
 `;
 
 const FooterItems = styled.div`
     display:flex;
     width:100%;
-    padding:3% 3% 0 3%;
-    ul:first-child{
-        text-align:center;    
+    padding:3% 325px 0 325px;
+    ul:first-child {
+        flex:0.58;
+    }
+    ul:nth-child(2) {
+        flex:1.1;
+    }
+
+    ul:nth-child(4) {
+        flex:0.7;
+    }
+
+    ul:last-child {
+        flex:0.2;
     }
 `;
 
@@ -53,17 +65,23 @@ const Item = styled.ul`
     flex:1;
     list-style-type:none;
     line-height:2;
+    font-size:18px;
     li:first-child{
         font-weight:bold;
-        font-size:18px;
+        text-align:left;
     }
+    
 `;
 
+const FooterLogo = styled.img`
+    width: 128px;
+    height: 132px;
+`;
 export default () => (
     <Footer>
         <FooterItems>
             <Item>
-                <li><img src={logo} /></li>
+                <li><FooterLogo src={logo} /></li>
             </Item>
             <Item>
                 <li>(주)브리엑스</li>

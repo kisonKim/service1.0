@@ -4,39 +4,40 @@ import TypedWord from "react-typed";
 import recommendCircle from "Resources/main/keyvisual/recommendCircle.svg";
 import vipCircle from "Resources/main/keyvisual/vipCircle.svg";
 
-const buttonCircleSize = "50px";
+const buttonCircleSize = "40px";
 const recommCircleFullWidth = "230px";
 const vipCircleFullWidth = "250px";
 const buttonTextBtw = "60px";
 
 const LeftBody = styled.div`
-    flex:1.4;
+    flex:1.13;
     vertical-align:middle;
-    color:#1E2D3A;
+    color:black;
 `;
 
 const Slogan = styled.span`
-    font-size: 1.25rem;
+    font-size: 22px;
     font-weight: bold;
     color: #f85e65;
 `;
 
 const BriphyIs = styled.span`
     display: block;
-    font-weight: bold;
-    font-size: 5rem;
-    margin-top : 1rem;
+    font-size: 70px;
+    font-weight:800;
+    margin-top : 24px;
     margin-bottom : 0.6rem;
 `;
 
 const Typed = styled.div`
     display: block;
-    font-size: 5rem;
+    font-size: 70px;
+    font-weight:800;
     margin-top:25px;
 `;
 
 const Recommend = styled.div`
-    margin-top: 145px;
+    margin-top: 160px;
     cursor:pointer;
 `;
 
@@ -52,7 +53,7 @@ const Vip = styled.div`
     display:inline-block;
     cursor:pointer;
     height: 1px;
-    margin-top: 90px;
+    margin-top: 60px;
 `;
 
 const RecommendCircle = styled.div`
@@ -64,7 +65,7 @@ const RecommendCircle = styled.div`
     height:${buttonCircleSize};
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size:22px;
     line-height:40px;
     background-color: rgb(236, 173, 166);
     transition: all 0.5s;
@@ -75,8 +76,9 @@ const RecommendBtn = styled.span`
     top:50%;
     left:${buttonTextBtw};
     width:160px;
-    font-size:30px;
-    font-weight: bold;
+    color:#2A435B;
+    font-size:22px;
+    font-weight: 800;
     transform:translateY(-50%);
 `;
 
@@ -91,7 +93,7 @@ const VipCircle = styled.div`
     background-color: rgb(245, 236, 230);
     transition: all 0.5s;
     text-align:center;
-    font-size:30px;
+    font-size:22px;
     line-height:40px;
 `;
 
@@ -100,8 +102,9 @@ const VipBtn = styled.span`
     top:50%;
     width:160px;
     left:${buttonTextBtw};
-    font-size:30px;
-    font-weight: bold;
+    font-size:22px;
+    color:#2A435B;
+    font-weight: 800;
     transform:translateY(-50%);
 `;
 
@@ -120,7 +123,7 @@ class KeyVisualLeft extends React.Component {
         const navyColor = "rgb(42,67,91)";
         const pinkColor = "rgb(236, 173, 166)";
         const beigeColor = "rgb(245, 236, 230)";
-        typedText.style.fontWeight = 600;
+
         typedCursor.innerText = "";
         typedCursor.style.marginLeft = "2px";
         typedCursor.style.borderRight = "2px solid black";

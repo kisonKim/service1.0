@@ -6,7 +6,7 @@ import UnbalancedRight from "./UnbalancedRight";
 const UnBalanced = styled.div`    
     display:flex;
     flex-direction:row;
-    padding-top:10%;
+    padding-top:204px;
     `;
 
 class KeyVisualSection extends React.Component {

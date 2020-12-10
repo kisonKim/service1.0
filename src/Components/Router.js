@@ -10,7 +10,19 @@ import Detail from 'Routes/Detail';
 
 export default () => (
     <Router>
-    <Header />
+        <Route
+          render={({ location }) => {
+            if (location.pathname.split("/")[1] !== "admin") {
+              return (
+                <>
+                  <Header />
+                </>
+              );
+            } else {
+              return <AdminHeader></AdminHeader>;
+            }
+          }}
+        ></Route>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/recommend" exact component={Recommend} />
@@ -18,7 +30,7 @@ export default () => (
             <Route path="/search" exact component={Search} />
             <Route path="/recommend/:id" exact component={Detail} />
             <Route path="/portfolio/:id" exact component={Detail} />
-            {/* <Route path="/more" exact component={More} /> */}
+            <Route path="/admin" exact component={AdminMain}></Route>
             <Redirect from="*" to="/" />
         </Switch>
     </Router>

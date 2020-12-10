@@ -5,13 +5,14 @@ import keyvisualImg from "Resources/main/keyvisual/keyvisual.svg";
 const RightBody = styled.div`
     flex:1;
     width:100%;
+    margin-top: 15px;
 `;
 
 const Canvas = styled.canvas`
     position:absolute;
     top:0;
     left:0;
-    margin-top:-60px;
+    margin-top:-50px;
     width:100%;
     background-color:transparent;
 `;
@@ -21,8 +22,8 @@ const KeyVisualImg = styled.img`
     top:50px;
     left:50%;
     transform:translateX(-50%);
-    width: 307px;
-    height: 495px;
+    width: 266px;
+    height: 429px;
 `;
 
 const CanvasSection = styled.div`
@@ -41,12 +42,12 @@ class KeyVisualRight extends React.Component {
         let width = ctx.canvas.width;
         let height = ctx.canvas.height;
         
-        let y1 = 80;
-        let y2 = 330;
-        let y3 = 570;
-        let x1 = 220;
-        let x2 = 570;
-        let x3 = 181;
+        let y1 = 60;
+        let y2 = 220;
+        let y3 = 400;
+        let x1 = 180;
+        let x2 = 450;
+        let x3 = 150;
 
         let y1speed = 0.6;
         let y2speed = 0.6;
@@ -55,9 +56,9 @@ class KeyVisualRight extends React.Component {
         let x2speed = 0.6;
         let x3speed = 1.1;
 
-        let cRad1 = 47.5;
-        let cRad2 = 85.5;
-        let cRad3 = 163;
+        let cRad1 = 36;
+        let cRad2 = 76.5;
+        let cRad3 = 141;
 
         let cRad1Speed = 0.3;
         let cRad2Speed = 0.3;
@@ -139,7 +140,7 @@ class KeyVisualRight extends React.Component {
         return (
             <RightBody>
                 <CanvasSection>
-                    <Canvas ref="canvas" width={750} height={750} >이 브라우저는 canvas를 지원하지 않습니다.</Canvas>
+                    <Canvas ref="canvas" width={580} height={556} >이 브라우저는 canvas를 지원하지 않습니다.</Canvas>
                     <KeyVisualImg src={keyvisualImg} />
                 </CanvasSection>
             </RightBody>
