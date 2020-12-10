@@ -24,7 +24,7 @@ const FooterBottom = styled.div`
 const FooterMiddle = styled.div`
     padding:10px 0;
     width:100%;
-    color:black;
+    color:#1E2D3A;
     text-align:center;
     position: absolute;
     bottom : 60px;

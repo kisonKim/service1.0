@@ -6,10 +6,12 @@ import KeyVisualSection from "./KeyVisualSection/KeyVisualSection";
 import UnbalancedSection from "./UnbalancedSection/UnbalancedSection";
 
 const HomeStyle = styled.div`
-    width:100%;
+    
     background-color: white;
-    color: black;
-    padding: 10% 120px;
+    // padding: 170px 324px;
+    width:1200px;
+    min-width:1200px;
+    margin: 170px 325px;
 `;
 
 class HomePresenter extends Component {

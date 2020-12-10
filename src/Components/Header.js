@@ -4,15 +4,18 @@ import styled from "styled-components";
 import logo from "Resources/logo.svg";
 
 const Header = styled.header`
+    display: flex;
     position:fixed;
     top:0;
     left:0;
-    width: 100%;
-    height: 50px;
-    display: flex;
+    width:1200px;
+    min-width:1200px;
+    margin: 0 325px;
+    height: 70px;
+    font-size: 18px;
     align-items: center;
     z-index: 3;
-    padding: 0 120px;
+    color:#1E2D3A;
     background-color: white;
     border-bottom:1px solid white;
     box-shadow:1px 1px 4px 1px white;
@@ -23,26 +26,26 @@ const Item = styled.li`
     text-align:center;
     border-bottom : 5px solid ${props=> props.current?"#e74c3c":'transparent'};
     transition: border-bottom .3s ease-in-out;
-    line-height:50px;
+    line-height:70px;
 
     &:first-child {
-        width:150px;
-        margin-right:100px;
+        width:173px;
+        margin-right:73px;
     }
     `;
 
 const List = styled.ul`
     display:flex;    
-    height:50px;
+    height:70px;
 `;
 
 const LogoImg = styled.img`
-    width:140px;
+    width:100%;
     vertical-align:middle;
 `;
 
 const SLink = styled(Link)`
-    height:50px;
+    height:70px;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +56,8 @@ const MoreSpan = styled.span`
 `;
 const UserItem = styled.div`
     position:absolute;
-    right: 120px;
-    line-height:50px;
+    right:0;
+    line-height:70px;
 `;
 
 const Login = styled(Link)`
@@ -83,13 +86,13 @@ export default withRouter( ({location: { pathname } }) => (
                 </SLink>
             </Item>
             <Item current={pathname==="/recommend"}>
-                <SLink to="/recommend">추천서비스</SLink>
+                <SLink to="/recommend">추천 받기</SLink>
             </Item>
             <Item current={pathname==="/portfolio"}>
-                <SLink to="/portfolio">포트폴리오</SLink>
+                <SLink to="/portfolio">포트폴리오 보기</SLink>
             </Item>
-            <Item current={pathname==="/search"}>
-                <SLink to="/search">Search</SLink>
+            <Item current={pathname==="/vip"}>
+                <SLink to="/portfolio">VIP 서비스</SLink>
             </Item>
             <Item>
                 <MoreSpan>

@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 const globalStyles = createGlobalStyle`
+    
     ${reset};
     a{
         text-decoration:none;
@@ -11,9 +12,11 @@ const globalStyles = createGlobalStyle`
         box-sizing:border-box;
     }
     body {
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        color:#1E2D3A;
+        font-family : "NanumSquare_AC", sans-serif;
         font-size:16px;
-    }
+    } 
 `;
 
 export default globalStyles;
