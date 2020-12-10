@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Header from 'Components/Header';
+import AdminHeader from 'Components/AdminHeader';
 import Home from 'Routes/Home';
+import AdminHome from 'Routes/AdminHome';
 import Recommend from 'Routes/Recommend';
 import Portfolio from 'Routes/Portfolio';
 import Search from 'Routes/Search';
@@ -30,7 +32,7 @@ export default () => (
             <Route path="/search" exact component={Search} />
             <Route path="/recommend/:id" exact component={Detail} />
             <Route path="/portfolio/:id" exact component={Detail} />
-            <Route path="/admin" exact component={AdminMain}></Route>
+            <Route path="/admin" exact component={AdminHome} />
             <Redirect from="*" to="/" />
         </Switch>
     </Router>

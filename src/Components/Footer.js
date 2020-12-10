@@ -6,7 +6,7 @@ import instagram from "Resources/footer/instagram.svg";
 const Footer = styled.footer`
     background-color: rgb(30,45,58);
     color: white;
-    height: 370px;
+    height: 368px;
     position:relative;
     width: 100%;
 `;
@@ -22,12 +22,12 @@ const FooterBottom = styled.div`
 `;
 
 const FooterMiddle = styled.div`
-    padding:17px 0;
+    padding:14px 0;
     width:100%;
     color:#1E2D3A;
     text-align:center;
     position: absolute;
-    bottom : 60px;
+    bottom : 78px;
     left : 0px;
     background-color: rgb(245, 236, 230);
 `;
@@ -67,6 +67,7 @@ const Item = styled.ul`
     line-height:2;
     font-size:18px;
     li:first-child{
+        font-size:22px;
         font-weight:bold;
         text-align:left;
     }
@@ -85,7 +86,7 @@ export default () => (
             </Item>
             <Item>
                 <li>(주)브리엑스</li>
-                <li>대표:신영욱 개인정보보호책임 : 개발팀</li>
+                <li>대표:신영욱<span style={{marginLeft:'30px'}}>개인정보보호책임</span> : 개발팀</li>
                 <li>주소 : 서울시 중구 퇴계로 36길 2, 상생스페이스</li>
                 <li>이메일 : contact@briphy.com</li>
             </Item>
